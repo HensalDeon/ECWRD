@@ -1,0 +1,14 @@
+# Dependencies (dev tooling only — not needed on the server)
+/vendor/
+/node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs & local env
+*.log
+.env

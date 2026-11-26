@@ -1,0 +1,25 @@
+/**
+ * ECWRD admin tweaks: Arabic fields are edited right-to-left.
+ */
+.ecwrd-lang-ar .acf-input input[type="text"],
+.ecwrd-lang-ar .acf-input input[type="url"],
+.ecwrd-lang-ar .acf-input textarea {
+	direction: rtl;
+	text-align: right;
+	font-size: 15px;
+}
+
+.ecwrd-lang-ar .acf-label,
+.ecwrd-lang-ar .acf-label .description {
+	direction: ltr;
+}
+
+/* The language group label is empty; remove its spacing. */
+.ecwrd-lang-group > .acf-label {
+	display: none;
+}
+
+.ecwrd-lang-group > .acf-input > .acf-fields > .acf-field-group > .acf-label label {
+	font-size: 14px;
+	font-weight: 600;
+}

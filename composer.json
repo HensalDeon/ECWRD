@@ -1,0 +1,22 @@
+{
+	"name": "eightysixcode/ecwrd-institutional",
+	"description": "Bilingual (EN/AR) WordPress theme for the Emirates Council for Work Relation Development.",
+	"type": "wordpress-theme",
+	"license": "proprietary",
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.1",
+		"php-stubs/wordpress-stubs": "^6.8"
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"lint:fix": "phpcbf"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
