@@ -76,4 +76,4 @@ $ecwrd_nav = ecwrd_nav_items();
 	</div>
 </header>
 
-<div class="page" data-page>
+<div class="site-page" data-page>

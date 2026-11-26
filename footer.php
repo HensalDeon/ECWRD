@@ -73,7 +73,7 @@ $ecwrd_social = array_filter(
 			</div>
 		</div>
 	</footer>
-</div><!-- .page -->
+</div><!-- .site-page -->
 
 <?php wp_footer(); ?>
 </body>

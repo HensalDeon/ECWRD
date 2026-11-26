@@ -210,7 +210,10 @@ address {
 	letter-spacing: 0 !important;
 }
 
-.page {
+/* Wrapper for everything below the header (main + footer). Deliberately NOT
+ * named `.page`: WordPress adds that class to <body> on every page, which
+ * would make the page-enter animation move the header too. */
+.site-page {
 	min-height: 100vh;
 	background-color: var(--color-page);
 }
@@ -358,11 +361,11 @@ address {
 	}
 }
 
-.js .page {
+.js .site-page {
 	animation: ecwrd-page-enter 0.5s var(--ease-out) backwards;
 }
 
-.js .page.is-leaving {
+.js .site-page.is-leaving {
 	opacity: 0;
 	transform: translateY(-12px);
 	transition:
@@ -1398,13 +1401,13 @@ body.is-menu-open {
 		transition: none;
 	}
 
-	.js .page,
+	.js .site-page,
 	.mobile-menu.is-open .mobile-menu__item,
 	.mobile-menu.is-open .mobile-menu__footer {
 		animation: none;
 	}
 
-	.js .page.is-leaving {
+	.js .site-page.is-leaving {
 		transition: none;
 	}
 
